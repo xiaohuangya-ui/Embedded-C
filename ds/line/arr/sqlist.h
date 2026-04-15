@@ -1,0 +1,46 @@
+#ifndef _SQLIST_H__
+#define _SDLIST_H__
+
+#define DATASIZE 1024
+
+typedef int datatype;
+
+typedef struct node_st
+{
+    
+    datatype data[DATASIZE];
+    int last;
+
+}sqlist;
+
+sqlist *sqlist_create();
+
+void sqlist_create1(sqlist**);
+
+int sqlist_isempty(sqlist *);
+
+int sqlist_insert(sqlist *,int i, datatype *);
+
+int sqlist_delete(sqlist *, int j);
+
+datatype sqlist_findnum(sqlist *,int i);
+
+int sqlist_findarr(sqlist *,datatype *);
+
+int sqlist_modify(sqlist *, int i ,datatype *);
+
+int sqlist_getnum(sqlist *);
+
+int sqlist_union(sqlist *,sqlist *);
+
+void sqlist_setempty(sqlist *);
+
+void sqlist_display(sqlist *);
+    
+void sqlist_destory(sqlist *);
+
+
+
+
+
+#endif
