@@ -1,0 +1,23 @@
+# 编译产物
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+
+# 可执行文件（你自己编译出来的名字）
+study_c
+a.out
+
+# 调试/临时文件
+*.swp
+*.swo
+*~
+*.log
+
+# IDE 目录（可选）
+.vscode/
+.idea/
